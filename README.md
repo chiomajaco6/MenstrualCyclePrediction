@@ -6,7 +6,9 @@ August 25, 2023
 <div style="text-align: justify">  
 1. Dr. Mrs. Jacinta Chioma Odirichukwu [Project Manager/Team Leader, Data Analysis, Machine Learning, IoT and Robotics]
 2. Simom Peter Chimaobi Odirichukwu    [Member, Health Officer, Health Data Montoring and Evaluation]
+  
 # MenstrualCyclePrediction
+
 This project/paper aims at predicting menstrual cycle length of women based on past historical data. Accurate fertility prediction is crucial. It provides important knowledge for making decisions about family planning. Women can efficiently plan pregnancies, check the health of their reproductive systems, take preventative measures to guarantee overall health with precise knowledge of lengths of their menstrual cycles. 
 </div>
 
