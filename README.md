@@ -3,9 +3,7 @@ August 25, 2023
 
 # Project Team Member
 
-<div style="text-align: justify">  
-* Dr. Mrs. Jacinta Chioma Odirichukwu [Project Manager/Team Leader, Data Analysis, Machine Learning, IoT and Robotics]
-* Simom Peter Chimaobi Odirichukwu    [Member, Health Officer, Health Data Montoring and Evaluation]
+* Dr. Mrs. Jacinta Chioma Odirichukwu [Project Manager/Team Leader, Data Analysis, Machine Learning, IoT and Robotics]Simom * Peter Chimaobi Odirichukwu    [Member, Health Officer, Health Data Montoring and Evaluation]
   
 # Project Aim
 
