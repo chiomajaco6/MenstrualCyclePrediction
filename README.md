@@ -4,8 +4,8 @@ August 25, 2023
 # Project Team Member
 
 <div style="text-align: justify">  
-* 1. Dr. Mrs. Jacinta Chioma Odirichukwu [Project Manager/Team Leader, Data Analysis, Machine Learning, IoT and Robotics]
-* 2. Simom Peter Chimaobi Odirichukwu    [Member, Health Officer, Health Data Montoring and Evaluation]
+* Dr. Mrs. Jacinta Chioma Odirichukwu [Project Manager/Team Leader, Data Analysis, Machine Learning, IoT and Robotics]
+* Simom Peter Chimaobi Odirichukwu    [Member, Health Officer, Health Data Montoring and Evaluation]
   
 # Project Aim
 
@@ -29,9 +29,9 @@ Using data produced by a predetermined model, the existing system used machine l
 </div>
 
 # Algorithms/Techniques of the Existing System
-* Model		                    MAE		    MSE		    RMSE
+* Model		                        MAE		        MSE		    RMSE
 
-* LSTM 		                    3.4000 	    4.2895 	    2.0711 
+* LSTM 		                        3.4000 	    4.2895 	    2.0711 
 * ARIMA                           7.3000      7.7964      2.7922 
 * Orthogonal Matching Pursuit     5.3373      41.1000     6.1243 
 * Elastic Net                     5.3686      41.1295     6.1588 
@@ -44,7 +44,7 @@ Using data produced by a predetermined model, the existing system used machine l
 * Dummy Regressor                 5.4702      41.5427     6.2063 
 * Light Gradient Boosting Machine 5.4702      41.5427     6.2063 
 * Bayesian Ridge                  5.5910      44.0523     6.3834 
-*K Neighbors Regressor           5.6383      45.9650     6.5151 
+* K Neighbors Regressor           5.6383      45.9650     6.5151 
 * Passive Aggressive Regressor    5.6844      48.3409     6.5683 
 * Random Forest Regressor         6.2947      59.3721     7.3739 
 * AdaBoost Regressor              6.2856      56.1740     7.3034 
