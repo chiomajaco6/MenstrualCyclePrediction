@@ -3,12 +3,13 @@ August 25, 2023
 
 # Project Team Member
 
-<div style="text-align: justify">  
-1. Dr. Mrs. Jacinta Chioma Odirichukwu [Project Manager/Team Leader, Data Analysis, Machine Learning, IoT and Robotics]
-2. Simom Peter Chimaobi Odirichukwu    [Member, Health Officer, Health Data Montoring and Evaluation]
-# MenstrualCyclePrediction
+* Dr. Mrs. Jacinta Chioma Odirichukwu [Project Manager/Team Leader, Data Analysis, Machine Learning, IoT and Robotics]
+* Simom Peter Chimaobi Odirichukwu    [Member, Health Officer, Health Data Montoring and Evaluation]
+  
+# Project Aim
+
 This project/paper aims at predicting menstrual cycle length of women based on past historical data. Accurate fertility prediction is crucial. It provides important knowledge for making decisions about family planning. Women can efficiently plan pregnancies, check the health of their reproductive systems, take preventative measures to guarantee overall health with precise knowledge of lengths of their menstrual cycles. 
-</div>
+
 
 # Problem Statement
 <div style="text-align: justify">  
@@ -27,30 +28,30 @@ Using data produced by a predetermined model, the existing system used machine l
 </div>
 
 # Algorithms/Techniques of the Existing System
-Model		                    MAE		    MSE		    RMSE
+* Model		                        MAE		        MSE		    RMSE
 
-LSTM 		                    3.4000 	    4.2895 	    2.0711 
-ARIMA                           7.3000      7.7964      2.7922 
-Orthogonal Matching Pursuit     5.3373      41.1000     6.1243 
-Elastic Net                     5.3686      41.1295     6.1588 
-Huber Regressor                 5.5458      43.5776     6.2851 
-Ridge Regression                5.4826      42.5662     6.2523 
-Linear Regression               5.4914      42.7152     6.2604 
-Least Angle Regression          5.4914      42.7152     6.2604 
-Lasso Regression                5.4554      42.2978     6.2402 
-Lasso Least Angle Regression    5.4554      42.2978     6.2402 
-Dummy Regressor                 5.4702      41.5427     6.2063 
-Light Gradient Boosting Machine 5.4702      41.5427     6.2063 
-Bayesian Ridge                  5.5910      44.0523     6.3834 
-K Neighbors Regressor           5.6383      45.9650     6.5151 
-Passive Aggressive Regressor    5.6844      48.3409     6.5683 
-Random Forest Regressor         6.2947      59.3721     7.3739 
-AdaBoost Regressor              6.2856      56.1740     7.3034 
-CatBoost Regressor              7.2368      76.8913     8.4820 
-Gradient Boosting Regressor     7.2034      75.0468     8.3428 
-Decision Tree Regressor         7.1083      75.7250     8.3555 
-Extra Trees Regressor           7.1378      69.3403     8.1291 
-Extreme Gradient Boosting       7.5025      77.0432     8.5549 
+* LSTM 		                        3.4000 	    4.2895 	    2.0711 
+* ARIMA                           7.3000      7.7964      2.7922 
+* Orthogonal Matching Pursuit     5.3373      41.1000     6.1243 
+* Elastic Net                     5.3686      41.1295     6.1588 
+* Huber Regressor                 5.5458      43.5776     6.2851 
+* Ridge Regression                5.4826      42.5662     6.2523 
+* Linear Regression               5.4914      42.7152     6.2604 
+* Least Angle Regression          5.4914      42.7152     6.2604 
+* Lasso Regression                5.4554      42.2978     6.2402 
+* Lasso Least Angle Regression    5.4554      42.2978     6.2402 
+* Dummy Regressor                 5.4702      41.5427     6.2063 
+* Light Gradient Boosting Machine 5.4702      41.5427     6.2063 
+* Bayesian Ridge                  5.5910      44.0523     6.3834 
+* K Neighbors Regressor           5.6383      45.9650     6.5151 
+* Passive Aggressive Regressor    5.6844      48.3409     6.5683 
+* Random Forest Regressor         6.2947      59.3721     7.3739 
+* AdaBoost Regressor              6.2856      56.1740     7.3034 
+* CatBoost Regressor              7.2368      76.8913     8.4820 
+* Gradient Boosting Regressor     7.2034      75.0468     8.3428 
+* Decision Tree Regressor         7.1083      75.7250     8.3555 
+* Extra Trees Regressor           7.1378      69.3403     8.1291 
+* Extreme Gradient Boosting       7.5025      77.0432     8.5549 
 
 # Proposed System Design
 
