@@ -5,6 +5,10 @@ August 25, 2023
 
 * Dr. Mrs. Jacinta Chioma Odirichukwu [Project Manager/Team Leader, Data Analysis, Machine Learning, IoT and Robotics]
 * Simom Peter Chimaobi Odirichukwu    [Member, Health Officer, Health Data Montoring and Evaluation]
+* Okorie Ignatius Chukwunonyerem
+[Member, Data Scientist/Data analyst]
+* John Ugochukwu Nnoruka [Member, Machine learning Engineer, Django/Python developer, Research Assistant]
+
   
 # Project Aim
 
