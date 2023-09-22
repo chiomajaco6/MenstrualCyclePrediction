@@ -18,10 +18,9 @@ This project/paper aims at predicting menstrual cycle length of women based on p
 # Problem Statement
 <div style="text-align: justify">  
 
-The variability of menstrual cycles, which can be influenced by a range of factors including stress, changes in weight, and certain medical issues, is one of the major obstacles in designing a Machine Learning algorithm for period tracking. Women seeking to optimize conception require a precise and dependable fertility prediction system capable of identifying their most fertile days with precision. However, current systems rely on simplistic algorithms that fail to encompass the intricate and individualized characteristics of each woman's menstrual cycle. the current system The data may not accurately reflect the general population because they came from a self-selected group of women who were willing to spend money on a commercially available fertility medication. 
-The existing research, as the current research review suggests, suggests future research in this field may concentrate on improving developed models through the incorporation of extra data sources, such as menstrual symptoms and hormonal data, and through the execution of more extensive investigations to verify conclusions in the existing system.
+The variability of menstrual cycles, which can be influenced by a range of factors including stress, changes in weight, and certain medical issues, is one of the major obstacles in designing a Machine Learning algorithm for period tracking. Women seeking to optimize conception require a precise and dependable fertility prediction system capable of identifying their most fertile days with precision. 
+The existing research, as the current research review suggests, future research in this field may concentrate on improving developed models through the incorporation of extra data sources, such as menstrual symptoms and hormonal data, and through the execution of more extensive investigations to verify conclusions in the existing system.
 
-</div>
 
 # The Existing System
 
