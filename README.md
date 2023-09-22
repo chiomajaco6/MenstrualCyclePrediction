@@ -26,7 +26,9 @@ The existing research, as the current research review suggests, future research 
 
 <div style="text-align: justify"> 
 
-Using data produced by a predetermined model, the existing system used machine learning techniques to forecast the menstrual cycle. This may result in fresh perspectives and understandings in the study of menstrual cycle prediction. Additionally, the results of the current system imply that machine learning models can forecast the menstrual cycle phase reliably and with little error. The findings have significant health implications for women and may be used to guide decisions on individualized reproductive health, including family planning and fertility treatment. Additionally, the algorithms can be trained on individualised data, making it possible to forecast menstrual cycle trends specifically for each user. Since conventional prediction techniques may not be as effective for women with irregular periods, this could be very helpful to them.
+Using data produced by a predetermined model, the existing system used machine learning techniques to forecast the menstrual cycle. This may result in fresh perspectives and understandings in the study of menstrual cycle prediction. Additionally, the results of the current system imply that machine learning models can forecast the menstrual cycle phase reliably and with little error. The findings have significant health implications for women and may be used to guide decisions on individualized reproductive health, including family planning and fertility treatment. 
+The AutoRegressive Integrated Moving Average, Huber Regression, Lasso Regression, Orthogonal Matching Pursuit, and Long Short-Term Memory Network are some of the time series forecasting algorithm approaches that existing system used.
+Additionally, the algorithms can be trained on individualised data, making it possible to forecast menstrual cycle trends specifically for each user. Since conventional prediction techniques may not be as effective for women with irregular periods, this could be very helpful to them.
 
 </div>
 
