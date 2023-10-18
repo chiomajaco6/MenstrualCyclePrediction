@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Result Page</title>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+.result {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.result p {
+  margin-bottom: 10px;
+}
+
+.back-link {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.back-link:hover {
+  background-color: #45a049;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Result Page</h2>
+    <div class="result">
+      <p>Predicted ovulation day:  {{ans}}</p>
+    </div>
+    <a href="{% url 'home' %}" class="back-link">Go Back</a>
+  </div>
+</body>
+</html>
