@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menstrual Cycle Prediction System | Home page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+    }
+
+    input[type="number"],
+    button {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: black;
+      width: auto;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="font-size: 20px; text-align: center; color: green;">MenstrualCyclePred-App</h1>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <h2>Data Form</h2>
+    <form action="{% url 'result' %}">
+      {% csrf_token %}
+      
+
+      <div class="form-group">
+        <label for="CycleNumber">Cycle Number:</label>
+        <br>
+        <input type="number" id="CycleNumber" required name="CycleNumber">
+      </div>
+
+      <div class="form-group">
+        <label for="LengthofCycle">Length of Cycle:</label>
+        <br>
+        <input type="number" id="LengthofCycle" required name="LengthofCycle">
+      </div>
+
+      <div class="form-group">
+        <label for="LengthofLutealPhase">Length of Luteal Phase:</label>
+        <br>
+        <input type="number" id="LengthofLutealPhase" required name="LengthofLutealPhase">
+      </div>
+      
+      <div class="form-group">
+        <label for="TotalNumberofHighDays">Total Number of High Days:</label>
+        <br>
+        <input type="number" id="TotalNumberofHighDays" required name="TotalNumberofHighDays">
+      </div>
+
+      <div class="form-group">
+        <label for="TotalNumberofPeakDays">Total Number of Peak Days:</label>
+        <br>
+        <input type="number" id="TotalNumberofPeakDays" required name="TotalNumberofPeakDays">
+      </div>
+
+      <div class="form-group">
+        <label for="UnusualBleeding">Unusual Bleeding:</label>
+        <br>
+        <input type="number" id="UnusualBleeding" required name="UnusualBleeding">
+      </div>
+
+      <div class "form-group">
+        <label for="PhasesBleeding">Phases of Bleeding:</label>
+        <br>
+        <input type="number" id="PhasesBleeding" required name="PhasesBleeding">
+      </div>
+
+      <div class="form-group">
+        <label for="IntercourseInFertileWindow">Intercourse in Fertile Window:</label>
+        <br>
+        <input type="number" id="IntercourseInFertileWindow" required name="IntercourseInFertileWindow">
+      </div>
+
+      <div class="form-group">
+        <label for="Age">Age:</label>
+        <br>
+        <input type="number" id="Age" required name="Age">
+      </div>
+
+      <div class="form-group">
+        <label for="BMI">Body Mass Index:</label>
+        <br>
+        <input type="number" id="BMI" required name="BMI">
+      </div>
+
+      <div class="form-group">
+        <label for="Method">Method Used:</label>
+        <br>
+        <input type="number" id="Method" required name="Method">
+      </div>
+
+      <button type="submit" value="Predict">Predict</button>
+    </form>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <footer>Menstrual Cycle Prediction System</footer>
+</body>
+</html>
