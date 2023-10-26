@@ -16,7 +16,6 @@ This project/paper aims at predicting menstrual cycle length of women based on p
 
 
 # Problem Statement
-<div style="text-align: justify">  
 
 The variability of menstrual cycles, which can be influenced by a range of factors including stress, changes in weight, and certain medical issues, is one of the major obstacles in designing a Machine Learning algorithm for period tracking. Women seeking to optimize conception require a precise and dependable fertility prediction system capable of identifying their most fertile days with precision. 
 The existing research, as the current research review suggests, future research in this field may concentrate on improving developed models through the incorporation of extra data sources, such as menstrual symptoms and hormonal data, and through the execution of more extensive investigations to verify conclusions in the existing system.
@@ -63,51 +62,46 @@ Additionally, the algorithms can be trained on individualised data, making it p
 ## Step 1: Data Collection
 
 Menstrual cycle dataset was collected from kaggle via https://www.kaggle.com/datasets/nikitabisht/menstrual-cycle-data
-Based on the existing system suggestion, we created this google form; https://docs.google.com/forms/d/e/1FAIpQLSfAeWexULsDXC5ZmZgLGPDVaE-RAKao4BnUQA-8-XoWRmbx7g/viewform
-to gather individualised data basically within Nigeria Environment
 
 ## Step 2 : Data Preprocessing
+Install and import the necessary libraries.
+The EDA done is found in the attached code and the branch called EDA
+
+
+## Step 3: Load the dataset
+
+The data was loaded as thus;
+df = pd.read_csv("C:/Users/hp/Desktop/MLs/DeployModelOvuLength/FedCycleData.csv")
+
+## Step 4: Feature Engineering
+The feature engineering was done on the dataset. Out of the 80 columns contained in the dataset, only 12 columns were extracted. These columns include: 
+CycleNumber', 'LengthofCycle', 'LengthofLutealPhase',  'TotalNumberofHighDays', 'TotalNumberofPeakDays', 'UnusualBleeding', 'PhasesBleeding', 'IntercourseInFertileWindow', 'Age', 'BMI', 'Method', 'EstimatedDayofOvulation'
+The columns were then splitted into feature columns and target columns. The feature columns include: ‘CycleNumber', 'LengthofCycle', 'LengthofLutealPhase',  'TotalNumberofHighDays', 'TotalNumberofPeakDays', 'UnusualBleeding', 'PhasesBleeding', 'IntercourseInFertileWindow', 'Age', 'BMI', 'Method', 
+ While the target column is ‘EstimatedDayofOvulation’. The feature columns were used to predict the Ovulation day of a woman.
+
+## Step 5: Split the dataset into training and testing set
+
+Th
+## Step 6: Train the model
+
+In training the model, twenty two (22) machine learning algorithm were used.
+
+
+## Step 7: Testing the trained model
+The model was trsted using the test set
 
 
 
-## Step 3: Training the Model
+## Step 8: Evaluating the model using some evaluation parameters.
 
+The metrics utilized to assess the proposed system's accuracy include Mean Squared Error (MSE), Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), R-squared (R2 score), Mean Absolute Percentage Error (MAPE), and Explained Variance Score (EVS).
 
-
-## Step 4: Import the dataset
-
-
-
-## Step 5: Splitting the dataset
-
-
-## Step 6: Split the dataset into training and testing set
-
-
-## Step 7: Develop the model
-
-
-## Step 8: Train the model
-
-
-## Testing the trained model using the X_train set
-
-
-
-## Step 9: Evaluating the model using some evaluation parameters.
-
-
-## Step 10: Pickling the model
-
+## Step 9: Iteration/Pickling the model
+The researchers experimented with different techniques to determine the model performs better.
+Decision having performed better based on R2 score was pickled.
 
 # Deploying the model Using Django
+The model was deployed in real time using the decision tree pickled model. Find deployed folder attached
 
+# Proposed System Result 
 
-# Feedbacks
-[01:28, 9/20/2023] +234 803 261 8951: There is a little concern in predicting menstural cycle
-[01:30, 9/20/2023] +234 803 261 8951: Menstruations are not precise. And predictions are not precise too. This variability seems to cancel the relevance of the research because what you are attempting to predict is already a variability. Significance of such projects are little
-[01:31, 9/20/2023] +234 803 261 8951: Do you have any other idea to mitigate this? Or how precise do you expect the result to be here?
-[01:32, 9/20/2023] DR. JACO: You are very right sir
-[01:33, 9/20/2023] DR. JACO: Some authors have conducted research, I am trying to validate the said performance based on their future suggestion to contribute to the existing knowledge.
-[01:35, 9/20/2023] DR. JACO: Menstrual cycle is not the only imprecise situation. Stock prediction is too and life itself is also fuzzy too
-[01:39, 9/20/2023] DR. JACO: Fuzzy logic is computer technique developed to capture imprecised situation
