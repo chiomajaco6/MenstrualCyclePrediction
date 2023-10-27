@@ -5,59 +5,143 @@ August 25, 2023
 
 * Dr. Mrs. Jacinta Chioma Odirichukwu [Project Manager/Team Leader, Data Analysis, Machine Learning, IoT and Robotics]
 * Simom Peter Chimaobi Odirichukwu    [Member, Health Officer, Health Data Montoring and Evaluation]
-* Okorie Ignatius Chukwunonyerem
-[Member, Data Scientist/Data analyst]
+* Okorie Ignatius Chukwunonyerem [Member, Data Scientist/Data analyst]
 * John Ugochukwu Nnoruka [Member, Machine learning Engineer, Django/Python developer, Research Assistant]
 
   
 # Project Aim
 
-This project/paper aims at predicting menstrual cycle length of women based on past historical data. Accurate fertility prediction is crucial. It provides important knowledge for making decisions about family planning. Women can efficiently plan pregnancies, check the health of their reproductive systems, take preventative measures to guarantee overall health with precise knowledge of lengths of their menstrual cycles. 
+This project/paper aims at predicting ovulation day of women based on past historical data. Accurate fertility prediction is crucial. It provides important knowledge for making decisions about family planning. Women can efficiently plan pregnancies, check the health of their reproductive systems, take preventative measures to guarantee overall health with precise knowledge of lengths of their menstrual cycles. 
 
 
 # Problem Statement
 
 The variability of menstrual cycles, which can be influenced by a range of factors including stress, changes in weight, and certain medical issues, is one of the major obstacles in designing a Machine Learning algorithm for period tracking. Women seeking to optimize conception require a precise and dependable fertility prediction system capable of identifying their most fertile days with precision. 
-The existing research, as the current research review suggests, future research in this field may concentrate on improving developed models through the incorporation of extra data sources, such as menstrual symptoms and hormonal data, and through the execution of more extensive investigations to verify conclusions in the existing system.
+The existing research,  suggests, future research in this field may concentrate on improving developed models through the incorporation of extra data sources, such as menstrual symptoms and hormonal data, and through the execution of more extensive investigations to verify conclusions in the existing system.
 
 
-# The Existing System
+# Generating model artifacts
+This model is trained using jupyter notebook
+Overview of Jupyter Notebook
+Go to command prompt and type: pip install jupyter I believe, you know how to invoke your command propmt from your Windows. Simply type: cmd in the search bar and press enter key. Your command prompt will show up.
 
-<div style="text-align: justify"> 
+Run the jupyter notebook from command prompt by typing: jupyter notebook. Dataset was viewed using Python Pandas, dataframe
 
-Using data produced by a predetermined model, the existing system used machine learning techniques to forecast the menstrual cycle. This may result in fresh perspectives and understandings in the study of menstrual cycle prediction. Additionally, the results of the current system imply that machine learning models can forecast the menstrual cycle phase reliably and with little error. The findings have significant health implications for women and may be used to guide decisions on individualized reproductive health, including family planning and fertility treatment. 
-The AutoRegressive Integrated Moving Average, Huber Regression, Lasso Regression, Orthogonal Matching Pursuit, and Long Short-Term Memory Network are some of the time series forecasting algorithm approaches that existing system used.
-Additionally, the algorithms can be trained on individualised data, making it possible to forecast menstrual cycle trends specifically for each user. Since conventional prediction techniques may not be as effective for women with irregular periods, this could be very helpful to them.
+The libraries need to be installed using the following commands in Jupyter Notebook: !pip install numpy !pip install pandas !pip install scikit-learn !pip install matplotlib !pip install seaborn
 
-</div>
+Functions of the libraries used
 
-# Algorithms/Techniques of the Existing System
-* Model		                        MAE		        MSE		    RMSE
+Pandas: A Python library called Pandas. Data analysis is done using Pandas. Python's Pandas package is used to manipulate data sets. It offers tools for data exploration, cleaning, analysis, and manipulation. Wes McKinney came up with the name "Pandas" in 2008, and it refers to both "Panel Data" and "Python Data Analysis."
 
-* LSTM 		                        3.4000 	    4.2895 	    2.0711 
-* ARIMA                           7.3000      7.7964      2.7922 
-* Orthogonal Matching Pursuit     5.3373      41.1000     6.1243 
-* Elastic Net                     5.3686      41.1295     6.1588 
-* Huber Regressor                 5.5458      43.5776     6.2851 
-* Ridge Regression                5.4826      42.5662     6.2523 
-* Linear Regression               5.4914      42.7152     6.2604 
-* Least Angle Regression          5.4914      42.7152     6.2604 
-* Lasso Regression                5.4554      42.2978     6.2402 
-* Lasso Least Angle Regression    5.4554      42.2978     6.2402 
-* Dummy Regressor                 5.4702      41.5427     6.2063 
-* Light Gradient Boosting Machine 5.4702      41.5427     6.2063 
-* Bayesian Ridge                  5.5910      44.0523     6.3834 
-* K Neighbors Regressor           5.6383      45.9650     6.5151 
-* Passive Aggressive Regressor    5.6844      48.3409     6.5683 
-* Random Forest Regressor         6.2947      59.3721     7.3739 
-* AdaBoost Regressor              6.2856      56.1740     7.3034 
-* CatBoost Regressor              7.2368      76.8913     8.4820 
-* Gradient Boosting Regressor     7.2034      75.0468     8.3428 
-* Decision Tree Regressor         7.1083      75.7250     8.3555 
-* Extra Trees Regressor           7.1378      69.3403     8.1291 
-* Extreme Gradient Boosting       7.5025      77.0432     8.5549 
+Numpy: Large, multi-dimensional arrays and matrices can be supported with the Python package Numpy. Additionally, it offers a vast selection of mathematical functions. Listed here are a few of NumPy's fundamental operations: a. Creating arrays b. Array indexing c. Array slicing d. Data types e. Copy vs. View f. Array shape g. Array reshape
 
-# Proposed System Design
+Matplotlib: Matplotlib is easy to use and an amazing visualizing library in Python. It is built on NumPy arrays, designed to work with the broader SciPy stack, and consists of several plots like lines, bars, scatters, histograms, etc.
+
+Seaborn
+
+Seaborn is a Python data visualization library that helps to visualize the statistical relationships between variables in a dataset. Its plotting functions operate on dataframes and arrays containing whole datasets and internally perform the necessary semantic mapping and statistical aggregation to produce informative plots. Seaborn aims to make visualization the central part of exploring and understanding data. It provides dataset-oriented APIs so that we can switch between different visual representations for the same variables for a better understanding of the data.
+
+scikit-learn
+Scikit-learn is a Python package that provides a selection of efficient tools for machine learning and statistical modeling. It includes algorithms for classification, regression, clustering, and dimensionality reduction. It is an open-source library that is reusable and easy to interface with other scientific packages. Scikit-learn is used to create and evaluate machine learning models of various types.
+
+tensorflow
+TensorFlow is an open-source machine learning framework developed by the Google Brain team. It is one of the most popular and widely used deep learning frameworks. TensorFlow is designed to facilitate the development and deployment of machine learning models, particularly neural networks, for a wide range of applications.
+
+key features and components of TensorFlow:
+
+
+keras
+Keras is an open-source deep learning framework for building and training artificial neural networks. It was originally developed as an independent project but has been integrated into TensorFlow as of TensorFlow 2.0. Keras provides a high-level, user-friendly interface for designing and training neural networks, making it easier for both beginners and experts to work with deep learning models.
+
+Key features of Keras include:
+1. Flexible Architecture: TensorFlow provides a flexible and modular architecture for designing and training machine learning models. It allows you to define complex neural network architectures with ease.
+
+2. Numerical Computation: TensorFlow is particularly known for its efficient numerical computation capabilities. It can leverage hardware acceleration (e.g., GPUs and TPUs) for faster training and inference.
+
+3. High-Level APIs: TensorFlow offers high-level APIs like Keras, which allow users to quickly create and train neural networks with minimal code.
+
+4. Low-Level APIs: For more advanced users, TensorFlow provides lower-level APIs that give fine-grained control over model development and training.
+
+5. TensorBoard: TensorFlow includes TensorBoard, a powerful tool for visualizing and monitoring the training process and model performance. It helps with debugging and optimizing models.
+
+6. AutoGraph: TensorFlow's AutoGraph feature can automatically convert Python code into graph operations, making it easier to work with dynamic computation graphs.
+
+7. Distributed Computing: TensorFlow supports distributed computing, allowing you to train models on multiple machines or accelerators simultaneously.
+
+8. SavedModel Format: TensorFlow models can be saved in the SavedModel format, making it easy to deploy models across various platforms and languages.
+
+9. TensorFlow Serving: TensorFlow Serving is a part of TensorFlow that simplifies model deployment and serving for production applications.
+
+10. Community and Ecosystem: TensorFlow has a large and active community, extensive documentation, and a wealth of pre-trained models and resources available.
+
+TensorFlow is widely used in various domains, including computer vision, natural language processing, speech recognition, and reinforcement learning. It's employed by researchers, engineers, and data scientists to develop machine learning models and deep neural networks for a wide range of applications.
+
+TensorFlow has undergone several versions and significant updates, with TensorFlow 2.x being a major release that introduced a more user-friendly and integrated experience, including the tight integration of the Keras high-level API. This has made TensorFlow more accessible to developers and has contributed to its continued popularity.
+
+
+
+
+1.User-Friendly API: Keras offers a simple and intuitive API for building and training neural networks, which abstracts many of the complexities of deep learning. It allows for easy model prototyping and experimentation.
+
+2. Modularity: Models in Keras are constructed as a sequence of layers, making it easy to assemble complex architectures. You can stack layers and connect them with various activation functions and other operations.
+
+3. Wide Range of Applications: Keras supports a variety of neural network architectures, including feedforward, convolutional, recurrent, and more. This makes it suitable for a wide range of tasks, from image classification to natural language processing.
+
+4. Backends: Keras is capable of running on top of different deep learning frameworks, including TensorFlow, Theano, and CNTK. As of TensorFlow 2.0, Keras is tightly integrated with TensorFlow.
+
+5. Extensibility: You can easily create custom layers, loss functions, and metrics in Keras. This makes it suitable for research and experimentation.
+
+6. Visualization Tools: Keras provides tools for visualizing your model's architecture and performance, which can be helpful for debugging and understanding your network.
+
+7. Pre-trained Models: Keras includes pre-trained models for various tasks, such as image classification, which can be fine-tuned for specific applications.
+
+To use Keras, you typically need to install TensorFlow or one of the other supported backends. Then, you can import Keras and start building and training your neural network models.
+
+
+
+To install the libraries in jupyter notebook, use the following command
+!pip install numpy
+!pip install pandas
+!pip install scikit-learn
+!pip install matplotlib
+!pip install seaborn
+!pip install tensorflow
+!pip install keras
+
+
+# Import the necessary librabries
+
+import numpy as np
+import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, f1_score, recall_score, r2_score
+import matplotlib.pyplot as plt
+import seaborn as sn
+from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import HuberRegressor
+from sklearn.linear_model import Lars
+from sklearn.linear_model import Lasso
+from sklearn.linear_model import LassoLars
+from sklearn.dummy import DummyRegressor
+from sklearn.linear_model import Ridge
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn.linear_model import ElasticNet
+from sklearn.linear_model import OrthogonalMatchingPursuit
+import lightgbm as lgb
+from sklearn.linear_model import BayesianRidge
+from sklearn.linear_model import PassiveAggressiveRegressor
+from sklearn.ensemble import AdaBoostRegressor
+from catboost import CatBoostRegressor
+from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.ensemble import ExtraTreesRegressor
+from xgboost import XGBRegressor
+from sklearn.preprocessing import MinMaxScaler
+import statsmodels.api as sm
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import LSTM, Dense
 
 ## Step 1: Data Collection
 
@@ -81,15 +165,16 @@ The columns were then splitted into feature columns and target columns. The feat
 
 ## Step 5: Split the dataset into training and testing set
 
-Th
+In training the model, twenty-two (22) machine learning algorithms were used. The dataset was split into a training set and a testing set. The ‘X_train’ represent 85% of the training dataset. The ‘X_test’ represent the 15% for the testing the model. ‘y_train’ represent the 85% of the target that was used to train the model. ‘y_test’ represent the 15% of the target dataset that was used to test the model. Thus;
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.15, random_state = 42)
+
 ## Step 6: Train the model
 
 In training the model, twenty two (22) machine learning algorithm were used.
 
 
 ## Step 7: Testing the trained model
-The model was trsted using the test set
-
+The model was tested using the test set
 
 
 ## Step 8: Evaluating the model using some evaluation parameters.
@@ -101,7 +186,7 @@ The researchers experimented with different techniques to determine the model pe
 Decision having performed better based on R2 score was pickled.
 
 # Deploying the model Using Django
-The model was deployed in real time using the decision tree pickled model. Find deployed folder attached
+The model was deployed in real time using the decision tree pickled model. The Decision Tree Regressor  model was deployed using python and django framework to create a real-time predictive app that predicts the ovulation of a woman. Find deployed folder attached
 
-# Proposed System Result 
+
 
