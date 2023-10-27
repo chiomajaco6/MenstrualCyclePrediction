@@ -7,6 +7,7 @@ August 25, 2023
 * Simom Peter Chimaobi Odirichukwu    [Member, Health Officer, Health Data Montoring and Evaluation]
 * Okorie Ignatius Chukwunonyerem [Member, Data Scientist/Data analyst]
 * John Ugochukwu Nnoruka [Member, Machine learning Engineer, Django/Python developer, Research Assistant]
+*  Nwanchukwu, David Chika [Member, Data Scientist/Data analyst]
 
   
 # Project Aim
